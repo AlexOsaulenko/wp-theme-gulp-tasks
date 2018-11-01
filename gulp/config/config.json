@@ -1,0 +1,44 @@
+{
+	"root": {
+		"themeName": "theme_name/",
+		"themePath": "wp-content/themes/"
+	},
+	"replace":{
+		"oldtheme": "theme_name_old",
+		"newtheme": "theme_name_new",
+		"OldTheme": "Theme_Name_Old",
+		"NewTheme": "Theme_Name_New",
+		"OLDTHEME": "THEME_NAME_OLD",
+		"NEWTHEME": "THEME_NAME_NEW"
+	},
+	"rtl": {
+		"path": "",
+		"source": "style.css",
+		"styleFileName": "style-rtl.css",
+		"minify": true
+	},
+	"sass": {
+		"watch": "assets/sass/**/*.scss",
+		"source": "assets/sass/style.scss",
+		"minify": true
+	},
+	"skin":{
+		"path":"skins/",
+		"name":"artskin/",
+		"watch": "assets/sass/**/*.scss",
+		"source": "assets/sass/style.scss",
+		"styleFileName": "style-skin.css"
+	},
+	"browserSync":{
+		"proxy": "http://192.168.9.180",
+		"port": "3000",
+		"open": false,
+		"notify": true,
+		"reloadDelay": "0",
+		"ghostMode": {
+			"clicks": false,
+			"forms": false,
+			"scroll": false
+		}
+	}
+}
